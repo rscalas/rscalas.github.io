@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it_IT"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="it_IT" /><updated>2026-11-27T10:45:19+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Roberto Scalas</title><subtitle>Siti vetrina e temi Jekyll veloci, eleganti e facili da gestire. Laureato in Matematica e fondatore di Pimath.</subtitle><author><name>Roberto Scalas</name></author><entry><title type="html">Perché scelgo Jekyll per i siti vetrina</title><link href="http://localhost:4000/blog/perche-scelgo-jekyll/" rel="alternate" type="text/html" title="Perché scelgo Jekyll per i siti vetrina" /><published>2026-11-25T00:00:00+01:00</published><updated>2026-11-25T00:00:00+01:00</updated><id>http://localhost:4000/blog/perche-scelgo-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/perche-scelgo-jekyll/"><![CDATA[<p>Quando un’attività mi chiede un sito, la prima domanda che faccio non riguarda i colori ma la manutenzione: <strong>chi lo aggiornerà, e quanto spesso?</strong> Per la maggior parte dei siti vetrina la risposta è «poco, e possibilmente senza pensarci». È qui che Jekyll dà il meglio.</p>
+
+<h2 id="cosè-un-sito-statico">Cos’è un sito statico</h2>
+
+<p>Un CMS come WordPress o Drupal costruisce ogni pagina nel momento in cui qualcuno la visita: legge il database, assembla i pezzi, poi risponde. Jekyll fa lo stesso lavoro <strong>una volta sola</strong>, quando pubblico il sito, e produce semplici file HTML pronti da servire.</p>
+
+<p>Il risultato pratico:</p>
+
+<ul>
+  <li><strong>Velocità.</strong> Il server non deve calcolare niente: consegna un file e basta.</li>
+  <li><strong>Sicurezza.</strong> Senza database e pannello di amministrazione online, la superficie d’attacco è minima.</li>
+  <li><strong>Costi.</strong> Un sito statico si può ospitare gratis su GitHub Pages o con pochi euro l’anno.</li>
+  <li><strong>Nessun aggiornamento obbligato.</strong> Non ci sono plugin da aggiornare ogni settimana per non restare esposti.</li>
+</ul>
+
+<h2 id="tutto-in-un-file-di-testo">Tutto in un file di testo</h2>
+
+<p>Nei miei temi orari, servizi, contatti e testi stanno in un unico file YAML. Cambiare un orario significa modificare una riga:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">orari</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">giorno</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Lunedì"</span>
+    <span class="na">apertura</span><span class="pi">:</span> <span class="s2">"</span><span class="s">09:00"</span>
+    <span class="na">chiusura</span><span class="pi">:</span> <span class="s2">"</span><span class="s">13:00"</span>
+</code></pre></div></div>
+
+<p>Al salvataggio il sito si ricompila da solo e la modifica è online.</p>
+
+<h2 id="quando-non-lo-consiglio">Quando <em>non</em> lo consiglio</h2>
+
+<p>Jekyll non è la risposta a tutto. Per un portale con migliaia di contenuti, più redattori e aree riservate — come <a href="https://www.pimath.xyz">Pimath</a> — uso un CMS completo. Per un ambulatorio, uno studio o un negozio che vuole farsi trovare e dare informazioni chiare, un sito statico è più rapido, più sicuro e più economico da mantenere.</p>
+
+<blockquote>
+  <p>La soluzione migliore è quasi sempre la più semplice che risolve davvero il problema.</p>
+</blockquote>]]></content><author><name>Roberto Scalas</name></author><summary type="html"><![CDATA[Niente database, niente aggiornamenti di sicurezza ogni settimana, pagine che si aprono subito: ecco perché per un piccolo sito un generatore statico è spesso la scelta più semplice.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/social.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Google Analytics e banner cookie: cosa serve davvero a un piccolo sito</title><link href="http://localhost:4000/blog/google-analytics-e-banner-cookie/" rel="alternate" type="text/html" title="Google Analytics e banner cookie: cosa serve davvero a un piccolo sito" /><published>2026-11-18T00:00:00+01:00</published><updated>2026-11-18T00:00:00+01:00</updated><id>http://localhost:4000/blog/google-analytics-e-banner-cookie</id><content type="html" xml:base="http://localhost:4000/blog/google-analytics-e-banner-cookie/"><![CDATA[<p>Molti piccoli siti mostrano un banner dei cookie «perché lo hanno tutti», anche quando non servirebbe. Altri caricano Google Analytics prima ancora che il visitatore abbia scelto. Vediamo come orientarsi.</p>
+
+<p><em>Questa è una guida pratica, non una consulenza legale: per casi particolari conviene sentire un professionista.</em></p>
+
+<h2 id="il-banner-serve-solo-se-cè-qualcosa-da-autorizzare">Il banner serve solo se c’è qualcosa da autorizzare</h2>
+
+<p>Le linee guida del Garante privacy sui cookie (giugno 2021) distinguono due famiglie:</p>
+
+<ol>
+  <li><strong>Strumenti tecnici</strong>, necessari al funzionamento del sito: non richiedono consenso, basta indicarli nell’informativa.</li>
+  <li><strong>Strumenti di profilazione e di terze parti</strong>, come Google Analytics nella configurazione standard, mappe incorporate, video di YouTube, pixel dei social: si possono attivare <strong>solo dopo il consenso</strong>.</li>
+</ol>
+
+<p>Se il tuo sito non carica nulla della seconda famiglia, il banner non serve. Ed è anche un bel messaggio da dare ai visitatori.</p>
+
+<h2 id="se-usi-analytics-il-consenso-viene-prima">Se usi Analytics, il consenso viene prima</h2>
+
+<p>Il punto che sfugge più spesso: lo script di Google <strong>non deve partire</strong> finché l’utente non ha cliccato «Accetta». Nei miei siti lo script viene aggiunto alla pagina solo in quel momento; prima, il browser non contatta nessun server di Google.</p>
+
+<h2 id="come-deve-essere-fatto-il-banner">Come deve essere fatto il banner</h2>
+
+<ul>
+  <li><strong>Accetta e Rifiuta con la stessa evidenza</strong>: stesso stile, stessa dimensione.</li>
+  <li><strong>Una X per chiudere</strong> che equivale a continuare senza consenso.</li>
+  <li><strong>Una scelta per categoria</strong>, per chi vuole decidere nel dettaglio.</li>
+  <li><strong>Un link sempre visibile</strong> (di solito in fondo alla pagina) per cambiare idea in qualsiasi momento.</li>
+  <li><strong>Nessun nuovo banner a ogni visita</strong>: la scelta va ricordata, per esempio per sei mesi.</li>
+</ul>
+
+<h2 id="lalternativa-più-semplice">L’alternativa più semplice</h2>
+
+<p>Se le statistiche ti servono solo per sapere quante persone visitano il sito, valuta di non usarle affatto o di affidarti alle statistiche aggregate del tuo hosting. Meno strumenti esterni significa un sito più veloce, un’informativa più corta e nessun banner da mostrare.</p>]]></content><author><name>Roberto Scalas</name></author><summary type="html"><![CDATA[Il banner dei cookie è obbligatorio? Dipende da cosa carica il sito. Una guida pratica per capire quando serve, come deve essere fatto e quando se ne può fare a meno.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/social.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Il quadrato di un binomio, spiegato con un disegno</title><link href="http://localhost:4000/blog/quadrato-di-un-binomio-disegno/" rel="alternate" type="text/html" title="Il quadrato di un binomio, spiegato con un disegno" /><published>2026-11-10T00:00:00+01:00</published><updated>2026-11-10T00:00:00+01:00</updated><id>http://localhost:4000/blog/quadrato-di-un-binomio-disegno</id><content type="html" xml:base="http://localhost:4000/blog/quadrato-di-un-binomio-disegno/"><![CDATA[<p>L’errore più comune nei compiti di algebra è scrivere</p>
+
+<p class="formula">(a + b)² = a² + b²</p>
+
+<p>e dimenticarsi un pezzo. Invece di ripetere la formula a memoria, proviamo a <em>vederla</em>.</p>
+
+<h2 id="un-quadrato-di-lato-a--b">Un quadrato di lato a + b</h2>
+
+<p>Disegna un quadrato e dividi ogni lato in due segmenti, uno lungo <em>a</em> e uno lungo <em>b</em>. Tracciando le linee dei punti di divisione, il quadrato grande si spezza in quattro figure:</p>
+
+<ol>
+  <li>un quadrato di lato <em>a</em>, che ha area <strong>a²</strong>;</li>
+  <li>un quadrato di lato <em>b</em>, che ha area <strong>b²</strong>;</li>
+  <li>due rettangoli uguali di lati <em>a</em> e <em>b</em>, ciascuno di area <strong>ab</strong>.</li>
+</ol>
+
+<p>L’area del quadrato grande è la somma delle quattro parti:</p>
+
+<p class="formula">(a + b)² = a² + 2ab + b²</p>
+
+<p>Il termine <strong>2ab</strong> sono proprio quei due rettangoli che, nella formula sbagliata, spariscono.</p>
+
+<h2 id="una-verifica-con-i-numeri">Una verifica con i numeri</h2>
+
+<p>Con <em>a</em> = 3 e <em>b</em> = 2: il quadrato grande ha lato 5 e area 25. Le parti valgono 9 + 4 + 6 + 6 = 25. I conti tornano; la formula sbagliata darebbe 13.</p>
+
+<h2 id="la-stessa-idea-in-codice">La stessa idea, in codice</h2>
+
+<p>Nell’illustrazione in cima al mio sito c’è proprio questa funzione, scritta in Ruby:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quadrato</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+  <span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span>
+<span class="k">end</span>
+
+<span class="n">quadrato</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># =&gt; 25</span>
+</code></pre></div></div>
+
+<p>È lo stesso metodo che uso per i siti: prima capire la struttura, poi scrivere il minimo indispensabile. Se ti piace questo modo di studiare, su <a href="https://www.pimath.xyz">Pimath</a> trovi teoria ed esercizi svolti passo passo.</p>]]></content><author><name>Roberto Scalas</name></author><summary type="html"><![CDATA[Perché (a + b)² non è a² + b²? Basta un quadrato diviso in quattro parti per vederlo, senza nemmeno scrivere un'equazione.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/social.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/social.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
