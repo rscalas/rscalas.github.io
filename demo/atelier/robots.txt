@@ -1,0 +1,1 @@
+Sitemap: /demo/atelier/sitemap.xml
